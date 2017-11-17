@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
-        android:background="@drawable/background"
-        android:configChanges="orientation"
-        android:screenOrientation="sensorLandscape">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/background"
+    android:configChanges="orientation"
+    android:screenOrientation="sensorLandscape">
 
-        <ImageView
-            android:id="@+id/tvMain"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/title_caro" />
+    <ImageView
+        android:id="@+id/tvMain"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/title_caro" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,24 +45,27 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp">
 
-                <ImageButton
-                    android:id="@+id/btnSpeaker"
+                <CheckBox
+                    android:id="@+id/ckbMusic"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_marginLeft="100dp"
-                    android:background="@drawable/speaker" />
+                    android:layout_marginLeft="80dp"
+                    android:button="@drawable/music"
+                    android:text="@null" />
 
                 <ImageButton
                     android:id="@+id/btnInfo"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:padding="50dp"
                     android:layout_marginLeft="50dp"
 
                     android:background="@drawable/info" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    </LinearLayout>
+</LinearLayout>

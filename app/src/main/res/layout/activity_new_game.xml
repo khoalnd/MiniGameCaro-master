@@ -5,75 +5,75 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:weightSum="1"
-    android:screenOrientation="sensorLandscape"
-    android:configChanges="orientation">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dp">
-
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/stone_b1"
-            android:id="@+id/imageView2"
-            android:layout_marginLeft="34dp"
-            android:layout_marginStart="34dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="15dp" />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/stone_w2"
-            android:id="@+id/imageView3"
-            android:layout_marginLeft="133dp"
-            android:layout_marginStart="133dp"
-            android:layout_alignTop="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            android:layout_toEndOf="@+id/imageView2" />
-
-    </RelativeLayout>
+    android:background="@drawable/background">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="374dp">
+        android:layout_width="450dp"
+        android:layout_height="match_parent">
 
         <com.team1.caro.minigamecaro.DrawView
             android:id="@+id/drawView"
             android:layout_width="match_parent"
             android:layout_marginTop="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="0dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--android:background="@drawable/bg"-->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@drawable/avatar" />
+            <TextView
+                android:id="@+id/tvNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textAlignment="center"
+                android:text="Nick name:" />
 
-        <Button
-            android:text="NEW GAME"
-            android:layout_width="114dp"
-            android:layout_height="61dp"
-            android:id="@+id/newGameButton"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNumClick"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="60sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:text="UNDO"
-            android:layout_width="114dp"
-            android:layout_height="61dp"
-            android:id="@+id/undoButton"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="250dp"
-            />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@drawable/refresh"/>
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:background="@drawable/home"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
