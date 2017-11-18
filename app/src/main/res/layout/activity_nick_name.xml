@@ -45,39 +45,23 @@
             android:textSize="50dp" />
     </LinearLayout>
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
-        android:padding="10dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
         android:weightSum="1">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:weightSum="0">
 
             <ImageButton
                 android:id="@+id/btnYes"
-                android:layout_marginLeft="150dp"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/yes"/>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:weightSum="0">
             <ImageButton
                 android:id="@+id/btnNo"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="100dp"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/no"/>
-        </LinearLayout>
-
-
     </LinearLayout>
 </LinearLayout>

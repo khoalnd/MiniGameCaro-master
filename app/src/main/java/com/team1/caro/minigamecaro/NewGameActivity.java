@@ -65,6 +65,20 @@ public class NewGameActivity extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_new_game);
         drawView = (DrawView) findViewById(R.id.drawView);
+
+        //zoom ban co, chua su dung duoc
+        /*
+        drawView = new DrawView(this);
+        // Allocate a RegionView.
+        final RegView_RelLayout lRegionView = (RegView_RelLayout) findViewById(R.id.regionView);
+        // Add some example items to drag.
+        lRegionView.addView(drawView);
+        // Assert that we only want to drag Views within the confines of the RegionView.
+        lRegionView.setWrapContent(false);
+        // Assert that after we've finished scaling a View, we want to stop being able to drag it until a new drag is started.
+        lRegionView.setDropOnScale(true);
+        */
+
         //undoButton = (Button) findViewById(R.id.btnHome);
         newGameButton = (Button) findViewById(R.id.btnReset);
         homeButton = (Button) findViewById(R.id.btnHome);

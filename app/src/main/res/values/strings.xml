@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MiniGameCaro</string>
+    <string name="app_name">Game Caro</string>
 
     <!-- Strings related to main -->
     <string name="main_title">Caro</string>
