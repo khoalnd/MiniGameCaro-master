@@ -185,6 +185,7 @@ public class NewGameActivity extends Activity {
                                 drawView.initialChessBoard();
                                 gameState = STATE_PLAYER_MOVE;
                                 COUNT_CLICK=0;
+                                numClick.setText(String.valueOf(COUNT_CLICK));
                             }
                         }
                         break;
@@ -203,6 +204,7 @@ public class NewGameActivity extends Activity {
                 drawView.initialChessBoard();
                 gameState = STATE_PLAYER_MOVE;
                 COUNT_CLICK=0;
+                numClick.setText(String.valueOf(COUNT_CLICK));
                 //drawView.update();
             }
         });
