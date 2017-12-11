@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="com.team1.caro.minigamecaro.popup.LevelActivity">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:freezesText="true"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="SELECT LEVEL"
+        android:textColor="@color/colorWhite"
+        android:background="@android:color/holo_orange_dark" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/easy"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Easy"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Normal"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Hard"
+            android:textColor="@color/colorWhite"
+            android:buttonTint="@color/colorWhite"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Select"
+        android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>
